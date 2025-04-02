@@ -1,21 +1,17 @@
+/* styles/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Custom Global Styles */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-lightBeige text-charcoalBlack font-sans;
 }
+
+a {
+  @apply text-saffron hover:text-gold transition-colors duration-300;
+}
+
+/* Additional global styles can be added here */
